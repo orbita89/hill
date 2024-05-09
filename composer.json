@@ -1,0 +1,22 @@
+{
+  "name": "vendor_name/hill",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Антон",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "psr/log": "^3.0",
+    "laravel/tinker": "^2.9",
+    "twig/twig": "^3.8",
+    "ext-readline": "*",
+    "ext-xdebug": "*",
+    "ext-apcu": "*",
+    "ext-zend-opcache": "*",
+    "ext-xhprof": "*"
+  }
+}
