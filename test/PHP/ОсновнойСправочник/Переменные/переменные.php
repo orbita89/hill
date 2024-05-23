@@ -65,49 +65,56 @@
 //var_dump($obj);
 
 //переменные переменных
-$a = 'yes';
-
-$$a = 'hello';
-
-$$$a = 'world';
+//$a = 'yes';
+//
+//$$a = 'hello';
+//
+//$$$a = 'world';
 
 //echo $a;
 
 //    echo "$a {$$$a}";
 
+//$name = 'user';
+//$$name = 'John';
+//echo $user;
 
+$table = 'users';
+$$table = ['name' => 'John', 'age' => 30];
+// Где-то еще в коде
+echo "User name: {$$table['name']}, Age: {$$table['age']} $users";
 
 //пример использование суперглобальных переменных
-echo __LINE__ . PHP_EOL;
-echo __FILE__ . PHP_EOL;
-echo __DIR__ . PHP_EOL;
-
-
-class MyClass {
-    use MyTrait;
-
-    public function myMethod() {
-        echo "Function: " . __FUNCTION__ . "\n"; // Имя метода
-        echo "Class: " . __CLASS__ . "\n"; // Имя класса с пространством имен
-        echo "Trait: " . __TRAIT__ . "\n"; // Имя трейта с пространством имен
-        echo "Method: " . __METHOD__ . "\n"; // Имя метода с пространством имен класса
-        echo "Namespace: " . __NAMESPACE__ . "\n"; // Пространство имен
-    }
-}
-
-trait MyTrait {
-    public function anotherMethod() {
-        echo "Function: " . __FUNCTION__ . "\n"; // Имя метода
-        echo "Class: " . __CLASS__ . "\n"; // Имя класса с пространством имен
-        echo "Trait: " . __TRAIT__ . "\n"; // Имя трейта с пространством имен
-        echo "Method: " . __METHOD__ . "\n"; // Имя метода с пространством имен класса
-        echo "Namespace: " . __NAMESPACE__ . "\n"; // Пространство имен
-    }
-}
-
-$obj = new MyClass();
-$obj->myMethod(); // Вызов метода класса
-$obj->anotherMethod(); // Вызов метода трейта
+//echo __LINE__ . PHP_EOL;
+//echo __FILE__ . PHP_EOL;
+//echo __DIR__ . PHP_EOL;
+//
+//
+//class MyClass {
+//    use MyTrait;
+//
+//    public function myMethod() {
+//        echo "Function: " . __FUNCTION__ . "\n"; // Имя метода
+//        echo "Class: " . __CLASS__ . "\n"; // Имя класса с пространством имен
+//        echo "Trait: " . __TRAIT__ . "\n"; // Имя трейта с пространством имен
+//        echo "Method: " . __METHOD__ . "\n"; // Имя метода с пространством имен класса
+//        echo "Namespace: " . __NAMESPACE__ . "\n"; // Пространство имен
+//    }
+//}
+//
+//trait MyTrait {
+//    public function anotherMethod() {
+//        echo "Function: " . __FUNCTION__ . "\n"; // Имя метода
+//        echo "Class: " . __CLASS__ . "\n"; // Имя класса с пространством имен
+//        echo "Trait: " . __TRAIT__ . "\n"; // Имя трейта с пространством имен
+//        echo "Method: " . __METHOD__ . "\n"; // Имя метода с пространством имен класса
+//        echo "Namespace: " . __NAMESPACE__ . "\n"; // Пространство имен
+//    }
+//}
+//
+//$obj = new MyClass();
+//$obj->myMethod(); // Вызов метода класса
+//$obj->anotherMethod(); // Вызов метода трейта
 
 
 

@@ -12,6 +12,7 @@ private $gender;
 
 public function __construct($name, $color, $age, $gender)
 {
+    
 }
 
 }
